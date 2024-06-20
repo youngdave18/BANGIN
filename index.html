@@ -1,0 +1,90 @@
+
+    <!--
+    * You can use callback method for success and fail submit form
+    * submitSuccess()
+    * submitFail()
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing widget</title>
+        
+        <style>
+          
+        </style>
+
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/libphonenumber-js@1.9.50/bundle/libphonenumber-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/js/intlTelInput-jquery.min.js" integrity="sha512-+xuLsxQN3JBrnBSAr/vOlUqZfQ0OwpqZfdbuiQVpzjd5Y85F8F2AyzP4YNVDrpR29EolzELxc62br5gWK51phQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.superphone.io/widgets/widget.css" />
+    <script src="https://cdn.superphone.io/widgets/widget.min.js"></script>
+  
+        <script type="text/javascript">
+          window.sp = {
+            widgetHash: 'WkQbB9',
+            type: 'page',
+          }
+          
+          // function formError(xhr, textStatus) {
+          //   // Custom code Form error
+          // }
+          // function formSuccess(result) {
+          //   // Custom code FOrm success
+          // }
+        </script>
+
+        <style>
+          body {
+            margin: 0;
+          }
+
+          html,
+          body {
+            height: 100%;
+            width: 100%;
+          }
+        </style>
+    </head>
+    <body>
+      <div id="superphone-widget-page" style="background-size:cover;background-repeat:no-repeat;background-image:url(https://cdn.filestackcontent.com/jq53ihQnSSO5IsivPMar);background-color:rgba(0,0,0,0);font-family:Circular, Arial;">
+        <div id="superphone-widget-wrapper">
+          <div id="superphone-widget-landing-wrapper" class="superphone-widget widget-landing" style="background-color: transparent;">
+            <div id="superphone-widget-title" style="color: rgba(255,255,255,1)">YOUNG DAVE BANGIN </div>
+            <div id="superphone-widget-description" style="color: rgba(255,255,255,1)">PLEASE ENTER YOUR PHONE NUMBER BELOW AND I WILL SHOOT YOU A TEXT RIGHT BACK:</div>
+            <form id="addContact" action="#" method="POST" autocomplete="false">
+              <div id="superphone-input-wrapper">
+                <div class="phone-input-wrapper">
+                  <input
+                      style="color:#000000;background-color:#F1F1F1"
+                      autocomplete="off"
+                      tabindex="4"
+                      type="tel"
+                      class="superphone-form-control"
+                      id="phone"
+                      name="mobile"
+                      placeholder="Mobile # (w/ country code)"
+                  >
+                </div>
+                <div class="superphone-send-button">
+                  <button style="background: rgba(255,0,0,1); color: #FFFFFF;font-family: Circular, Arial" type="submit" id="submitButton">Send</button>
+                </div>
+              </div>
+              <div id="form-error-message" class="form-error">
+                <div>Something went wrong. Please check your mobile and try again.</div>
+              </div>
+              <div id="form-error-mobile" class="form-error">
+                Phone number is not valid.
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    </body>
+    
